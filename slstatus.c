@@ -131,7 +131,7 @@ main(int argc, char *argv[])
 	} while (!done);
 
 	if (!sflag) {
-		XStoreName(dpy, DefaultRootWindow(dpy), NULL);
+		XStoreName(dpy, DefaultRootWindow(dpy), "");
 		if (XCloseDisplay(dpy) < 0) {
 			die("XCloseDisplay: Failed to close display");
 		}
